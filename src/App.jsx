@@ -3,8 +3,6 @@ import "./App.css";
 import Krok1 from "./Krok1";
 import Krok2 from "./Krok2";
 import Krok3 from "./Krok3";
-import Krok4 from "./Krok4";
-import Krok5 from "./Krok5";
 
 function App() {
   const [krok, setKrok] = useState(1);
@@ -37,24 +35,7 @@ function App() {
           matrix={matrix}
         ></Krok3>
       )}
-      {krok === 4 && (
-        <Krok4
-          setCol1={setCols}
-          setRow1={setRow}
-          setKrok={setKrok}
-          setMatrix={setMatrix}
-          matrix={matrix}
-        ></Krok4>
-      )}
-      {krok === 5 && (
-        <Krok5
-          setCol1={setCols}
-          setRow1={setRow}
-          setKrok={setKrok}
-          setMatrix={setMatrix}
-          matrix={matrix}
-        ></Krok5>
-      )}
+
       <footer>
         <h1>
           Веб-додаток у вигляді курсової роботи був розроблений студентом
